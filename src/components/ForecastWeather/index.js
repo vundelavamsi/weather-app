@@ -135,7 +135,6 @@ class ForecastWeather extends Component {
                   <p className='details'>{TimeFormatter(hourlyData.time)}</p>
                   <p className='details'>Temp: {Math.floor(hourlyData.values.temperature)}°C</p>
                   <p className='details'>Humidity: {Math.floor(hourlyData.values.humidity)}%</p>
-                  {/* Display other hourly forecast data as needed */}
                 </li>
               ))}
             </ul>
@@ -146,7 +145,6 @@ class ForecastWeather extends Component {
                   <p className='details'>{DayFormatter(dailyData.time)}</p>
                   <p className='details'>Min Temp: {Math.floor(dailyData.values.temperatureMin)}°C</p>
                   <p className='details'>Max Temp: {Math.floor(dailyData.values.temperatureMax)}°C</p>
-                  {/* Display other daily forecast data as needed */}
                 </li>
               ))}
             </ul>
